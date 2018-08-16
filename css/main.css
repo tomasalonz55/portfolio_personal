@@ -9,6 +9,8 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
+    border-right: 2.8em solid #fff;
+    border-left: 0.6em solid black;
     background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
@@ -18,7 +20,13 @@
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(135deg) translate(-5px, 6px); }
+    .menu-btn.close:hover :nth-child(1) {
+      border-right-color: #e9b8b9;
+      box-shadow: 0.4em 0 0.6em 0.1em rgba(205, 40, 44, 0.75); }
+    .menu-btn.close:hover :nth-child(3) {
+      border-right-color: #ddf1da;
+      box-shadow: 0.4em 0 0.6em 0.1em rgba(83, 228, 68, 0.65); }
 
 .menu {
   position: fixed;
@@ -204,6 +212,15 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
 
 .btn, .btn-dark, .btn-light {
   display: block;

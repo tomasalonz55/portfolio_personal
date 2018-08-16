@@ -1,3 +1,16 @@
+window.addEventListener('load',async e=>{
+	if('serviceWorker' in navigator){
+try{
+	navigator.serviceWorker.register('sw.js');
+	scope: '.';
+	console.log('Registrado');
+}catch (error) {
+console.log('No registrado');
+}
+
+	}
+});
+
 //Seleccionar del DOM
 const menuBtn= document.querySelector('.menu-btn');
 const menu= document.querySelector('.menu');
